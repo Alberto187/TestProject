@@ -32,6 +32,7 @@ public class loginTest {
 			driver=getDriver();
 			jse=getJse();
 			}
+			//nuevoComentario
 			public static WebDriver getDriver() {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mario\\Downloads\\test_automation\\drivers\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
