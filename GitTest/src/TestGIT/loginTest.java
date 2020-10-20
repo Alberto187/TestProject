@@ -73,7 +73,7 @@ public class loginTest {
 			}
 			public static void datos2(String datos[]){
 				try {
-					String ruta="C:\\Users\\Mario\\Desktop\\loginHS.xlsx";
+					String ruta="C:\\Users\\Mario\\git\\TestProject\\GitTest\\Excel\\loginHS.xlsx";
 					FileInputStream f= new FileInputStream(ruta);
 					XSSFWorkbook libro= new XSSFWorkbook (f);
 					XSSFSheet hoja= libro.getSheetAt(0);
