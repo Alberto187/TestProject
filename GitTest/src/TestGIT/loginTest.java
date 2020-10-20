@@ -32,7 +32,7 @@ public class loginTest {
 			driver=getDriver();
 			jse=getJse();
 			}
-			//nuevoComentario
+			//nuevoComentariodehoy
 			public static WebDriver getDriver() {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mario\\Downloads\\test_automation\\drivers\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
@@ -44,7 +44,7 @@ public class loginTest {
 			}
 			public static void main(String[] args)  throws InterruptedException{
 			try {	
-				String url=null,user = null,pass = null, empresa=null, rs=null, resultado=null;
+				String url=null,user = null,pass = null, empresa=null, rs=null, resultado=null, test=null;
 				String datos[];
 				datos = new String[12];
 				loginTest puente = new loginTest ();
