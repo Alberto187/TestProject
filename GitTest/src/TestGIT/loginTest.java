@@ -34,7 +34,8 @@ public class loginTest {
 			jse=getJse();
 			}
 			public static WebDriver getDriver() {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mario\\Downloads\\test_automation\\drivers\\chromedriver.exe");
+			String projectPaht=System.getProperty("user.dir");
+			System.setProperty("webdriver.chrome.driver", projectPaht+"\\Excel\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			return driver;
 			}
@@ -66,7 +67,7 @@ public class loginTest {
 				System.out.println("LOGIN::::::::::::::: PANTALLA DE LOGIN");
 				puente.login(empresa, user, pass,rs,url,resultado,exito);
 				puente.correo(url,exito);
-				//driver.quit();
+				driver.quit();
 				}
 			catch(Exception e){
 				e.printStackTrace();
