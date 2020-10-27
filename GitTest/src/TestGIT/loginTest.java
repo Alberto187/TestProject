@@ -148,11 +148,11 @@ public class loginTest {
 						alerta=driver.switchTo().alert().getText();
 						System.out.println("Algo ha salido mal");
 						System.out.println(alerta);
-						/*
+						
 						Escribir=new PrintWriter (Archivo,"utf-8");
 						Escribir.println(alerta);
 						Escribir.close();
-						*/
+						
 						driver.switchTo().alert().accept();
 						System.out.println("Se va cerrar la pantalla");
 						driver.close();
@@ -167,12 +167,12 @@ public class loginTest {
 							Thread.sleep(2000);
 							driver.findElement(By.id("MPW0005SALIR")).click();
 							Thread.sleep(2000);
-							/*
+							
 							Archivo =new File (resultado+timestamp+".doc");
 							Escribir=new PrintWriter (Archivo,"utf-8");
 							Escribir.println(exito);
 							Escribir.close();
-							*/
+							
 							}
 							else {
 								System.out.println("No se accedio al sistema");
@@ -182,7 +182,7 @@ public class loginTest {
 		}
 			public static void correo(String url, String exito) throws InterruptedException{
 				String correo="mmateo@interware.com.mx";
-				String pass="Leviathan18#";
+				String pass="";
 				url="https://www.google.com/intl/es-419/gmail/about/#";
 				driver.get(url);
 				Thread.sleep(2000);
